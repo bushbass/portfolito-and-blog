@@ -9,3 +9,7 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+
+header {
+  background: (url(../images/alex-pink-background-pattern.png));
+}
