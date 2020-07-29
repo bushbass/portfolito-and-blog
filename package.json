@@ -15,8 +15,10 @@
   },
   "dependencies": {
     "gatsby": "^2.23.12",
+    "gatsby-background-image": "^1.1.1",
     "gatsby-source-filesystem": "2.3.19",
     "gatsby-transformer-remark": "2.8.25",
+    "gatsby-transformer-sharp": "^2.5.11",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

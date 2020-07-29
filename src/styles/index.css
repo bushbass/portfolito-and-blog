@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Faster+One&display=swap");
+
+main {
+  background: url("http://alexnielsen.com/wp-content/uploads/2018/12/alex-pink-background-pattern.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name {
+  font-family: "Faster One", cursive;
+  font-size: 4rem;
+}
+.title {
+  margin: -50px 0 0 0;
+  font-size: 3rem;
+}
+.my-image {
+  border-radius: 50%;
+  border: 7px solid teal;
+  width: 200px;
+}
 nav li {
   list-style: none;
 }
