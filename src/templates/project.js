@@ -6,8 +6,7 @@ export default function Project({ data }) {
   const project = data.markdownRemark
   return (
     <Layout>
-      <div>
-        <h1>This is the project template</h1>
+      <div className="project-template">
         <h1>{project.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: project.html }} />
       </div>

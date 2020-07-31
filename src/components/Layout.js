@@ -1,15 +1,17 @@
 import React from "react"
-import Header from "../components/Header"
+import Nav from "./Nav"
 import Footer from "../components/Footer"
 import "../styles/index.css"
 
 function Layout(props) {
   return (
-    <>
-      <Header />
-      {props.children}
+    <div className="layout-container">
+      <div className="layout-content">
+        <Nav />
+        {props.children}
+      </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

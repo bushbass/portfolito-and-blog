@@ -4,9 +4,10 @@ function Footer() {
   return (
     <div>
       <hr />
-      I'm the Footer
       <p>
-        <a href="https://www.gatsbyjs.org/tutorial/part-six/">docs</a>
+        This website is created with Gatsby by Alex Nielsen. I am currently
+        seeking full-time web development positions in the New York City/New
+        Jersey area.
       </p>
     </div>
   )

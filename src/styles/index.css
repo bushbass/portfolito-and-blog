@@ -1,36 +1,103 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Faster+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Lato&family=Faster+One&display=swap");
 
-main {
+body {
   background: url("http://alexnielsen.com/wp-content/uploads/2018/12/alex-pink-background-pattern.png");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  font-family: Arial;
 }
-.name {
-  font-family: "Faster One", cursive;
-  font-size: 4rem;
+.layout-container {
+  margin: 0 auto;
+  padding: 1 rem;
+  max-width: 80vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.layout-content {
+  flex-grow: 1;
+  width: 100%;
+}
+.title-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.name,
+.title {
+  font-family: "Bungee Shade", cursive;
+  /* font-family: "Faster One", cursive; */
+  font-size: 2.5rem;
+  margin: 10px 0 10px 0;
+  line-height: 60px;
 }
 .title {
-  margin: -50px 0 0 0;
-  font-size: 3rem;
+  margin-bottom: 0px;
 }
 .my-image {
   border-radius: 50%;
   border: 7px solid teal;
-  width: 200px;
+  max-width: 200px;
+  max-height: 200px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: Lato;
+  font-weight: bold;
+  background: rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-bottom: 5px;
 }
 nav li {
   list-style: none;
 }
+
 nav a {
   text-decoration: none;
+  color: #d0ff00;
 }
-
-nav {
-  display: flex;
-  justify-content: space-around;
+nav a:hover {
+  color: red;
 }
 
 header {
   background: (url(../images/alex-pink-background-pattern.png));
+}
+
+.projects li {
+  list-style: none;
+}
+.projects {
+  background: rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 8px 8px 8px 0;
+}
+.project-template {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+/* At the top level of your code */
+@media screen and (max-width: 415px) {
+  nav {
+    /* display: flex; */
+    justify-content: space-around;
+    /* font-family: Lato; */
+    /* font-weight: bold; */
+    background: initial;
+    /* border-radius: 5px;  */
+    /* padding: 5px 20px;
+    margin-bottom: 5px; */
+  }
+  nav li {
+    padding: 0 1px;
+    background: rgba(250, 250, 250, 0.2);
+    border-radius: 5px;
+  }
 }

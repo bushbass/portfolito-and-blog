@@ -3,10 +3,8 @@ import Layout from "../components/Layout"
 
 export default function Resume() {
   return (
-    <div>
-      <Layout>
-        <div>Resume Page with layout</div>
-      </Layout>
-    </div>
+    <Layout>
+      <div>Resume Page with layout</div>
+    </Layout>
   )
 }
