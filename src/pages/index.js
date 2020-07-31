@@ -12,6 +12,7 @@ export default function Home() {
           </div>
           <img
             className="my-image"
+            alt="Alex Nielsen wearing a baseball cap"
             src="http://mtnielsen.com/wp-content/uploads/2018/09/me-mets-tiles-web-square-300x300.jpg"
           />{" "}
         </div>
