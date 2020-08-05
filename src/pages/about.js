@@ -5,9 +5,12 @@ export default function About() {
   return (
     <Layout>
       <div>
-        About Page with layout About Page with layout About Page with layout
-        About Page with layout About Page with layout About Page with layout
-        About Page with layout About Page with layout About Page with layout
+        <h1>About Me</h1>
+        <p>
+          Dummy text for now, I need to copy and re-write a new about section
+          based on the version from{" "}
+          <a href="http://AlexNielsen.com">AlexNielsen.com</a>
+        </p>
       </div>
     </Layout>
   )

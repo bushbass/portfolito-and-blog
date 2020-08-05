@@ -6,22 +6,24 @@ export default function Home({ data }) {
   return (
     <Layout>
       <h1>Projects</h1>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div className="projects" key={node.id}>
-          <Link to={node.fields.slug}>
-            <h3>{node.frontmatter.title}</h3>
-          </Link>
-          <li>
-            {console.log(node.frontmatter)}
-            <a href={node.frontmatter.repo}>Repo</a> -{" "}
-            <a href={node.frontmatter.demo}>
-              Demo hosted on {node.frontmatter.hosting}
-            </a>
-          </li>
-          <li>{node.frontmatter.skills}</li>
-          <li>{node.excerpt}</li>
-        </div>
-      ))}
+      <div className="projects-list">
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div className="projects" key={node.id}>
+            <Link to={node.fields.slug}>
+              <h3>{node.frontmatter.title}</h3>
+            </Link>
+            <li>
+              {console.log(node.frontmatter)}
+              <a href={node.frontmatter.repo}>Repo</a> -{" "}
+              <a href={node.frontmatter.demo}>
+                Demo hosted on {node.frontmatter.hosting}
+              </a>
+            </li>
+            <li>{node.frontmatter.skills}</li>
+            <li>{node.excerpt}</li>
+          </div>
+        ))}
+      </div>
     </Layout>
   )
 }

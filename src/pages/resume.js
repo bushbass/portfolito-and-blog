@@ -4,7 +4,10 @@ import Layout from "../components/Layout"
 export default function Resume() {
   return (
     <Layout>
-      <div>Resume Page with layout</div>
+      <div>
+        Current resume is on{" "}
+        <a href="http://AlexNielsen.com">AlexNielsen.com</a>
+      </div>
     </Layout>
   )
 }
