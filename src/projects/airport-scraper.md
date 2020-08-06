@@ -1,6 +1,7 @@
 ---
 title: "Airport Web Scraper"
-date: "2020-08-10"
+appType: "Web Scraping with Cheerio, React"
+date: "2020-08-15"
 type: "project"
 skills: "HTML | CSS | JavaScript | React | Cheerio.js | Chart.js"
 hosting: "Netlify"

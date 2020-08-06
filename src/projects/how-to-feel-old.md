@@ -1,5 +1,6 @@
 ---
 title: "How To Feel Old"
+appType: "React SPA"
 date: "2020-08-10"
 type: "project"
 skills: "HTML | CSS | JavaScript | React "

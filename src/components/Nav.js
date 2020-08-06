@@ -19,9 +19,6 @@ function Nav() {
       <li>
         <Link to="/blog">Blog</Link>
       </li>
-      <li>
-        <Link to="/resume">Resume</Link>
-      </li>
     </nav>
   )
 }

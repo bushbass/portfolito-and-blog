@@ -1,6 +1,7 @@
 ---
-title: "Responsive Landing Page"
-date: "2020-08-10"
+title: "Huddle Landing Page"
+appType: "Business Home page"
+date: "2020-08-01"
 type: "project"
 skills: "HTML | CSS | Responsive Design"
 repo: "https://github.com/bushbass/huddle-landing-page-679023"

@@ -1,5 +1,6 @@
 ---
 title: "Picture / Quote App"
+appType: "SPA with APIs"
 date: "2020-08-10"
 type: "project"
 skills: "HTML | CSS | JavaScript | React | APIs"

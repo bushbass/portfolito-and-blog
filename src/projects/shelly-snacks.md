@@ -1,6 +1,7 @@
 ---
 title: "Shelly Snacks"
-date: "2020-08-10"
+appType: "E-commerce Site"
+date: "2020-08-30"
 type: "project"
 skills: "HTML | CSS | JavaScript | React"
 repo: "https://codesandbox.io/s/react-shelly-snacks-6pmgt"

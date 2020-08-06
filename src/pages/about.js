@@ -11,6 +11,9 @@ export default function About() {
           based on the version from{" "}
           <a href="http://AlexNielsen.com">AlexNielsen.com</a>
         </p>
+        <p>
+          <a href="http://AlexNielsen.com/resume">Link to my current resume</a>
+        </p>
       </div>
     </Layout>
   )

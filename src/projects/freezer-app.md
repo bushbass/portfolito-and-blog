@@ -1,6 +1,7 @@
 ---
 title: "Freezer App"
-date: "2020-08-10"
+appType: "Full-stack Node/Express"
+date: "2020-08-20"
 type: "project"
 skills: "HTML | CSS | JavaScript | Express | REST API"
 repo: "https://github.com/bushbass/freezer-app"

@@ -10,13 +10,13 @@ export default function Home({ data }) {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div className="projects" key={node.id}>
             <Link to={node.fields.slug}>
-              <h3>{node.frontmatter.title}</h3>
+              <h3 className="project-title">{node.frontmatter.title}</h3>
             </Link>
+            <li className="app-type">{node.frontmatter.appType}</li>
             <li>
-              {console.log(node.frontmatter)}
-              <a href={node.frontmatter.repo}>Repo</a> -{" "}
+              <a href={node.frontmatter.repo}>Repo</a> |{" "}
               <a href={node.frontmatter.demo}>
-                Demo hosted on {node.frontmatter.hosting}
+                Demo - {node.frontmatter.hosting}
               </a>
             </li>
             <li>{node.frontmatter.skills}</li>
@@ -40,6 +40,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            appType
             date(formatString: "DD MMMM, YYYY")
             hosting
             repo
