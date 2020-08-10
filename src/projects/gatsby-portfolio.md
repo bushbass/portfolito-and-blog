@@ -5,7 +5,7 @@ date: "2020-08-13"
 type: "project"
 skills: "HTML | CSS | JavaScript | React | Gatsby"
 hosting: "Netlify"
-repo: "https://github.com/bushbass/"
+repo: "https://github.com/bushbass/portfolito-and-blog"
 demo: "https://alex-nielsen-portfolio.netlify.app/"
 ---
 
