@@ -7,14 +7,18 @@ export default function Home({ data }) {
     <Layout>
       <div>
         <h1>Blog</h1>
+
         <h3>
-          Excuse the dummy blog posts here. I am currently migrating my old blog
-          from wordpress to Gatsby (this site). Going forward, my blog posts
-          will be written in Markdown and the pages created by Gatsby. I will
-          initially be using gatsby-source-wordpress to import my old blogs but
-          ultimately I plan on converting all the old wordpress posts to
-          markdown and have them on Gatsby as well. The old blog can be found
-          here: <a href="http://AlexNielsen.com">AlexNielsen.com</a>
+          My current blog can still be found here:{" "}
+          <a href="http://AlexNielsen.com">AlexNielsen.com</a>.
+        </h3>
+        <h3>
+          Please excuse the dummy blog posts here. I am currently migrating my
+          old blog from wordpress to Gatsby (this site). Going forward, my blog
+          posts will be written in Markdown and the pages created by Gatsby. I
+          will initially be using gatsby-source-wordpress to import my old blogs
+          but ultimately I plan on converting all the old wordpress posts to
+          markdown and have them on Gatsby as well.
         </h3>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (

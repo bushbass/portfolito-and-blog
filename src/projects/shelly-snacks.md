@@ -9,4 +9,4 @@ demo: "https://codesandbox.io/s/react-shelly-snacks-6pmgt"
 hosting: "Codesandbox.io"
 ---
 
-E-commerce site. React, React-Router, React-Context
+A single page E-commerce site using React, React-Router, React-Context. All CSS and logic is built from scratch.

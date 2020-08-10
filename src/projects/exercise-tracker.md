@@ -9,4 +9,4 @@ demo: ""
 hosting: "Heroku"
 ---
 
-I expanded and added several features to this MERN app that was from a tutorial
+I expanded and added several features to this MERN app that was from a freeCodeCamp tutorial. Data is persisted in a MongoDB.

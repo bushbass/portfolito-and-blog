@@ -8,7 +8,10 @@ export default function Project({ data }) {
     <Layout>
       <div className="project-template">
         <h1>{project.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: project.html }} />
+        <div
+          className="project-template-main"
+          dangerouslySetInnerHTML={{ __html: project.html }}
+        />
       </div>
     </Layout>
   )

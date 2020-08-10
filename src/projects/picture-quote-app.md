@@ -9,4 +9,4 @@ demo: ""
 hosting: ""
 ---
 
-As part of a remote team, we desgined and built and app that took a search term from user input and returned an associated picture from the Unsplash API and associated quote from the **\_\_** API.
+As part of a remote team via Chingu corhots, we desgined and built and app that took a search term from user input and returned an associated picture from the Unsplash API and associated quote from the **\_\_** API. Unfortunately, it appears our API key is no longer working for the quote API. Finding a new quote API to repair this app is on my to do list.
