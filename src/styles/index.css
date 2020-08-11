@@ -2,15 +2,17 @@
 
 :root {
   --main-bg-color: rgb(255, 198, 255);
-  --link-color: #008080;
-  --link-color-hover: #00a7a7;
+  --link-color: rgb(85, 40, 111);
+  --link-color-hover: rgb(174, 117, 159);
+  --text-color: rgb(33, 11, 44);
+  --mugshot-border: teal;
 }
 
 body {
   /* background: url("http://alexnielsen.com/wp-content/uploads/2018/12/alex-pink-background-pattern.png"); */
-  background: var(--main-bg-color);
+  background-color: var(--main-bg-color);
   font-family: Arial;
-  color: rgb(0, 0, 70);
+  color: var(--text-color);
 }
 
 .layout-container {
@@ -45,7 +47,7 @@ body {
 }
 .my-image {
   border-radius: 50%;
-  border: 7px solid teal;
+  border: 7px solid var(--mugshot-border);
   max-width: 200px;
   max-height: 200px;
 }
