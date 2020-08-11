@@ -51,6 +51,11 @@ body {
   max-width: 200px;
   max-height: 200px;
 }
+.my-image-new {
+  border-radius: 50%;
+  border: 7px solid var(--mugshot-border);
+  width: 200px;
+}
 nav {
   display: flex;
   justify-content: space-between;

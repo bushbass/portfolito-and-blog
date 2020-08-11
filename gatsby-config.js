@@ -5,6 +5,15 @@ module.exports = {
     description: `Blog and Portfolio for Alex Nielsen Web Developer`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/images/`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

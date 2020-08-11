@@ -1,7 +1,26 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Home() {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "me-wearing-hat.jpg" }) {
+        id
+        childImageSharp {
+          fluid {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
       <main>
@@ -10,11 +29,16 @@ export default function Home() {
             <h1 className="name">Alex Nielsen</h1>
             <h2 className="name title">Web Developer</h2>
           </div>
-          <img
+          <Img
+            className="my-image-new"
+            fluid={data.file.childImageSharp.fluid}
+            alt="Alex Nielsen wearing a baseball cap"
+          />
+          {/* <img
             className="my-image"
             alt="Alex Nielsen wearing a baseball cap"
             src="http://mtnielsen.com/wp-content/uploads/2018/09/me-mets-tiles-web-square-300x300.jpg"
-          />{" "}
+          /> */}{" "}
         </div>
         <h3>HTML / CSS / Javascript / React </h3>
         <p>
