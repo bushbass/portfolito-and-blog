@@ -34,11 +34,6 @@ export default function Home() {
             fluid={data.file.childImageSharp.fluid}
             alt="Alex Nielsen wearing a baseball cap"
           />
-          {/* <img
-            className="my-image"
-            alt="Alex Nielsen wearing a baseball cap"
-            src="http://mtnielsen.com/wp-content/uploads/2018/09/me-mets-tiles-web-square-300x300.jpg"
-          /> */}{" "}
         </div>
         <h3>HTML / CSS / Javascript / React </h3>
         <p>

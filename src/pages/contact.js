@@ -7,11 +7,13 @@ export default function Contact() {
       <div>
         <h1>Contact Me</h1>
         <p>
-          My preferred method of contact is through{" "}
-          <a href="https://linkedin.com/in/alex-nielsen-nj">LinkedIn</a>
+          My email address can be found on my{" "}
+          <a href="http://AlexNielsen.com/resume">current resume</a>
         </p>
         <p>
-          <a href="http://AlexNielsen.com/resume">Link to my current resume</a>
+          You can also reach me through{" "}
+          <a href="https://linkedin.com/in/alex-nielsen-nj">LinkedIn</a>
+          <a href="https://twitter.com/BigAlsHouse">Twitter</a>
         </p>
       </div>
     </Layout>
