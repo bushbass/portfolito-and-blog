@@ -38,9 +38,12 @@ export default function About() {
             alt="Alex Nielsen doing a presentation at a Meetup"
           />
           technologies in web development and I've been doing projects to
-          showcase my skills. I have a YouTube channel where I talk about web
-          development and I've even given a few talks at a local freeCodeCamp
-          Meetup group.
+          showcase my skills.{" "}
+          <a href="https://www.youtube.com/channel/UCqdNQHOLz3PmB4cDvQkdQ1w/">
+            I have a YouTube channel
+          </a>{" "}
+          where I talk about web development and I've even given a few talks at
+          a local freeCodeCamp Meetup group.{" "}
         </p>
         <p>
           HTML and CSS are the mainstays of course, but I've really come to love
