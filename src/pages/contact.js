@@ -12,7 +12,7 @@ export default function Contact() {
         </p>
         <p>
           You can also reach me through{" "}
-          <a href="https://linkedin.com/in/alex-nielsen-nj">LinkedIn</a>
+          <a href="https://linkedin.com/in/alex-nielsen-nj">LinkedIn</a> or{" "}
           <a href="https://twitter.com/BigAlsHouse">Twitter</a>
         </p>
       </div>
