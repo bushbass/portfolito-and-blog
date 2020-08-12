@@ -23,6 +23,7 @@ export default function Home() {
 
   return (
     <Layout>
+      {console.log("Social Icons are from https://designmodo.com/")}
       <main>
         <div className="title-area">
           <div>

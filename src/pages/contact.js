@@ -1,7 +1,34 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Contact() {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(
+        filter: {
+          ext: { regex: "/(png)/" }
+          relativeDirectory: { eq: "social" }
+        }
+      ) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              fluid {
+                aspectRatio
+                base64
+                sizes
+                src
+                srcSet
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
   return (
     <Layout>
       <div>
@@ -15,6 +42,28 @@ export default function Contact() {
           <a href="https://linkedin.com/in/alex-nielsen-nj">LinkedIn</a> or{" "}
           <a href="https://twitter.com/BigAlsHouse">Twitter</a>
         </p>
+        <div className="social-image-container">
+          <img
+            className="social-image"
+            src={`../../social/gmail.png`}
+            alt="gmail logo"
+          />
+          <img
+            className="social-image"
+            src={`../../social/linkedin.png`}
+            alt="linkedin logo"
+          />
+          <img
+            className="social-image"
+            src={`../../social/twitter.png`}
+            alt="twitter logo"
+          />
+          <img
+            className="social-image"
+            src={`../../social/youtube.png`}
+            alt="youtube logo"
+          />
+        </div>
       </div>
     </Layout>
   )

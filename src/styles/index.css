@@ -121,6 +121,13 @@ a:hover {
 .app-type {
   font-size: 1.3rem;
 }
+.social-image-container {
+  display: flex;
+}
+.social-image {
+  width: 60px;
+  margin-right: 10px;
+}
 @media screen and (max-width: 415px) {
   p {
     text-align: justify;
