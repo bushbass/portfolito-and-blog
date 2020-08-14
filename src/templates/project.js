@@ -13,6 +13,27 @@ export default function Project({ data }) {
           dangerouslySetInnerHTML={{ __html: project.html }}
         />
       </div>
+
+      <p>
+        <span className="project-bullet-text">Project Type</span> -{" "}
+        {project.frontmatter.appType}
+      </p>
+      <p>
+        <span className="project-bullet-text">Skills used</span> -{" "}
+        {project.frontmatter.skills}
+      </p>
+      <p>
+        <span className="project-bullet-text">Hosted on</span> -{" "}
+        {project.frontmatter.hosting}
+      </p>
+      <p>
+        <span className="project-bullet-text">Repo</span> -{" "}
+        {project.frontmatter.repo}
+      </p>
+      <p>
+        <span className="project-bullet-text">Demo</span> -{" "}
+        {project.frontmatter.demo}
+      </p>
     </Layout>
   )
 }
@@ -23,6 +44,11 @@ export const query = graphql`
       html
       frontmatter {
         title
+        appType
+        skills
+        hosting
+        repo
+        demo
       }
     }
   }

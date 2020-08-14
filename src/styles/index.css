@@ -118,6 +118,9 @@ a:hover {
   border-radius: 5px;
   padding: 05px 15px;
 }
+.project-bullet-text {
+  font-weight: bold;
+}
 .app-type {
   font-size: 1.3rem;
 }
