@@ -112,6 +112,9 @@ a:hover {
   align-items: center; */
   margin: 20px;
 }
+.project-template p {
+  margin-left: 20px;
+}
 .project-template-main {
   background: rgba(250, 250, 250, 0.2);
   box-shadow: 3px 3px 3px #0062ff54;

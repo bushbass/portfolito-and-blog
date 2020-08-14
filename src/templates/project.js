@@ -12,28 +12,27 @@ export default function Project({ data }) {
           className="project-template-main"
           dangerouslySetInnerHTML={{ __html: project.html }}
         />
+        <p>
+          <span className="project-bullet-text">Project Type</span> -{" "}
+          {project.frontmatter.appType}
+        </p>
+        <p>
+          <span className="project-bullet-text">Skills used</span> -{" "}
+          {project.frontmatter.skills}
+        </p>
+        <p>
+          <span className="project-bullet-text">Hosted on</span> -{" "}
+          {project.frontmatter.hosting}
+        </p>
+        <p>
+          <span className="project-bullet-text">Repo</span> -{" "}
+          {project.frontmatter.repo}
+        </p>
+        <p>
+          <span className="project-bullet-text">Demo</span> -{" "}
+          {project.frontmatter.demo}
+        </p>
       </div>
-
-      <p>
-        <span className="project-bullet-text">Project Type</span> -{" "}
-        {project.frontmatter.appType}
-      </p>
-      <p>
-        <span className="project-bullet-text">Skills used</span> -{" "}
-        {project.frontmatter.skills}
-      </p>
-      <p>
-        <span className="project-bullet-text">Hosted on</span> -{" "}
-        {project.frontmatter.hosting}
-      </p>
-      <p>
-        <span className="project-bullet-text">Repo</span> -{" "}
-        {project.frontmatter.repo}
-      </p>
-      <p>
-        <span className="project-bullet-text">Demo</span> -{" "}
-        {project.frontmatter.demo}
-      </p>
     </Layout>
   )
 }
