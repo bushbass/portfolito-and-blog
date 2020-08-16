@@ -11,6 +11,13 @@
 body {
   /* background: url("http://alexnielsen.com/wp-content/uploads/2018/12/alex-pink-background-pattern.png"); */
   background-color: var(--main-bg-color);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    135deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(250, 144, 250, 1) 0%,
+    rgba(128, 130, 255, 1) 100%
+  );
   font-family: Arial;
   color: var(--text-color);
 }
