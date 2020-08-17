@@ -1,34 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
 
 export default function Contact() {
-  const data = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: {
-          ext: { regex: "/(png)/" }
-          relativeDirectory: { eq: "social" }
-        }
-      ) {
-        edges {
-          node {
-            relativePath
-            childImageSharp {
-              fluid {
-                aspectRatio
-                base64
-                sizes
-                src
-                srcSet
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
   return (
     <Layout>
       <div>

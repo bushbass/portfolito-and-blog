@@ -32,11 +32,6 @@ export default function About() {
           college, I worked as a web developer for a few years. Since then, I've
           tried out a few other career paths, but I've always come back to web
           development. Not long ago I decided to try to keep pace with the new
-          <Img
-            className="presenting-image"
-            fluid={data.file.childImageSharp.fluid}
-            alt="Alex Nielsen doing a presentation at a Meetup"
-          />
           technologies in web development and I've been doing projects to
           showcase my skills.{" "}
           <a href="https://www.youtube.com/channel/UCqdNQHOLz3PmB4cDvQkdQ1w/">
@@ -44,6 +39,11 @@ export default function About() {
           </a>{" "}
           where I talk about web development and I've even given a few talks at
           a local freeCodeCamp Meetup group.{" "}
+          <Img
+            className="presenting-image"
+            fluid={data.file.childImageSharp.fluid}
+            alt="Alex Nielsen doing a presentation at a Meetup"
+          />
         </p>
         <p>
           HTML and CSS are the mainstays of course, but I've really come to love

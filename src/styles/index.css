@@ -142,6 +142,9 @@ a:hover {
   margin-right: 10px;
 }
 @media screen and (max-width: 415px) {
+  .presenting-image {
+    float: initial;
+  }
   p {
     text-align: justify;
     text-justify: inter-word;
@@ -159,6 +162,7 @@ a:hover {
   .title {
     font-size: 2rem;
     line-height: 60px;
+    text-align: center;
   }
   .layout-container {
     max-width: 80vw;
