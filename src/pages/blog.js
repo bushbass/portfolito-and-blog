@@ -2,47 +2,65 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 
-export default function Home({ data }) {
+export default function Blog({ data }) {
+  const wpPosts = data.wpgraphql.posts.nodes
+
   return (
     <Layout>
-      <div>
-        <h1>Blog</h1>
+      <h1>Blog</h1>
 
-        <h3>
-          My current blog can still be found here:{" "}
-          <a href="http://AlexNielsen.com">AlexNielsen.com</a>.
-        </h3>
-        <h3>
-          Please excuse the dummy blog posts here. I am currently migrating my
-          old blog from wordpress to Gatsby (this site). Going forward, my blog
-          posts will be written in Markdown and the pages created by Gatsby. I
-          will initially be using gatsby-source-wordpress to import my old blogs
-          but ultimately I plan on converting all the old wordpress posts to
-          markdown and have them on Gatsby as well.
-        </h3>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <Link to={node.fields.slug}>
-              <h3>
-                {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
-              </h3>
-              {console.log(node)}
+      <h3>
+        My recent posts are sourced from Markdown files and built with Gatsby.
+        Older posts are sourced from my old WordPress site.
+      </h3>
+
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <article key={node.id}>
+          <Link to={node.fields.slug}>
+            <h3>
+              {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
+            </h3>
+          </Link>
+          <p>
+            {node.excerpt}
+            <br />
+          </p>
+        </article>
+      ))}
+      <hr />
+      <h3>The following posts are being sourced from my old wordpress site.</h3>
+      {wpPosts.map(wpPost => (
+        <article key={wpPost.id}>
+          <h3>
+            <Link to={`/old-blog/${wpPost.uri}`}>
+              {" "}
+              {wpPost.title} — {wpPost.date}
             </Link>
-            <p>
-              {node.excerpt}
-              <br />
-              Time to read {node.timeToRead}
-            </p>
-          </div>
-        ))}
-      </div>
+            {/* <Link
+              to={`/old-blog/${wpPost.uri}`}
+              dangerouslySetInnerHTML={{ __html: wpPost.title }}
+            /> */}
+          </h3>
+          <div dangerouslySetInnerHTML={{ __html: wpPost.excerpt }}></div>
+        </article>
+      ))}
     </Layout>
   )
 }
 
 export const query = graphql`
   query {
+    wpgraphql {
+      posts(first: 100) {
+        nodes {
+          excerpt
+          id
+          title
+          date
+          uri
+        }
+      }
+    }
     allMarkdownRemark(
       filter: { frontmatter: { type: { eq: "blog" } } }
       sort: { fields: frontmatter___date, order: DESC }

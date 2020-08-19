@@ -1,11 +1,7 @@
 ---
-title: "First blog post"
-date: "2017-08-10"
+title: "First post on my Gatsby site!"
+date: "2017-08-19"
 type: "blog"
 ---
 
-First blog post
-
-First blog postFirst blog postFirst blog postFirst blog postFirst blog post
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4n0xNbfJLR8" frameborder="0" allowfullscreen></iframe>
+Including this post and going forward, my blog post will be written in Markdown and simply hosted in my Git repo. My older posts are being sourced from my old WordPress blog.

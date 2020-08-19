@@ -5,6 +5,14 @@ module.exports = {
     description: `Blog and Portfolio for Alex Nielsen Web Developer`,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "WPGraphQL",
+        fieldName: "wpgraphql",
+        url: "http://alexnielsen.com/graphql",
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
