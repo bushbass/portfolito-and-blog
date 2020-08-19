@@ -29,6 +29,14 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      wpgraphql {
+        posts(first: 100) {
+          nodes {
+            id
+            uri
+          }
+        }
+      }
     }
   `)
 
@@ -51,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
     .forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/templates/project.js`),
+        component: path.resolve(`./src/templates/project-template.js`),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
@@ -59,4 +67,14 @@ exports.createPages = async ({ graphql, actions }) => {
         },
       })
     })
+
+  result.data.wpgraphql.posts.nodes.forEach(post => {
+    actions.createPage({
+      path: `old-blog/${post.uri}`,
+      component: require.resolve("./src/templates/wp-post-template.js"),
+      context: {
+        id: post.id,
+      },
+    })
+  })
 }
