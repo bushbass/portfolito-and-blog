@@ -10,7 +10,7 @@ module.exports = {
       options: {
         typeName: "WPGraphQL",
         fieldName: "wpgraphql",
-        url: "http://alexnielsen.com/graphql",
+        url: "https://alexnielsenwebdeveloper.wordpress.com/graphql",
       },
     },
     `gatsby-transformer-sharp`,
