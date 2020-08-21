@@ -6,7 +6,7 @@ type: "project"
 skills: "HTML | CSS | JavaScript | React"
 repo: "https://github.com/bushbass/shelly-snacks"
 demo: "https://musing-chandrasekhar-44f065.netlify.app/"
-hosting: "Codesandbox.io"
+hosting: "Netlify"
 ---
 
 A single page E-commerce site using React, React-Router, React-Context. All CSS and logic is built from scratch.
