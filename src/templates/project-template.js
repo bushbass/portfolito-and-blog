@@ -26,11 +26,11 @@ export default function Project({ data }) {
         </p>
         <p>
           <span className="project-bullet-text">Repo</span> -{" "}
-          {project.frontmatter.repo}
+          <a href={project.frontmatter.repo}>{project.frontmatter.repo}</a>
         </p>
         <p>
           <span className="project-bullet-text">Demo</span> -{" "}
-          {project.frontmatter.demo}
+          <a href={project.frontmatter.demo}>{project.frontmatter.demo}</a>
         </p>
       </div>
     </Layout>
