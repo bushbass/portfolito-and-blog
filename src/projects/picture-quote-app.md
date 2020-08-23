@@ -4,8 +4,8 @@ appType: "SPA with APIs"
 date: "2020-08-10"
 type: "project"
 skills: "HTML | CSS | JavaScript | React | APIs"
-repo: ""
-demo: ""
+repo: "https://alex-nielsen-portfolio.netlify.app/projects/picture-quote-app/"
+demo: "https://alex-nielsen-portfolio.netlify.app/projects/picture-quote-app/"
 hosting: ""
 ---
 
