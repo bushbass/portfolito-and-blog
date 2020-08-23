@@ -10,3 +10,4 @@ hosting: "Netlify"
 ---
 
 A single page E-commerce site using React, React-Router, React-Context. All CSS and logic is built from scratch.
+The products are pulled from an API connected to a Google spreadsheet.
