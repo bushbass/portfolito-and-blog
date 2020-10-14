@@ -21,7 +21,7 @@ export default function Project({ data }) {
           {project.frontmatter.skills}
         </p>
         <p>
-          <span className="project-bullet-text">Hosted on</span> -{" "}
+          <span className="project-bullet-text">Hosting</span> -{" "}
           {project.frontmatter.hosting}
         </p>
         <p>
