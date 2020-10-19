@@ -25,7 +25,7 @@ export default function About() {
       <div>
         <h1>About Me</h1>
         <p>
-          <a href="http://AlexNielsen.com/resume">Link to my current resume</a>
+          <a href="http://AlexNielsen.net/resume">Link to my current resume</a>
         </p>
         <p>
           I've loved computers for a long time. Although I studied music in
