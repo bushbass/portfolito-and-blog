@@ -4,8 +4,8 @@ date: "2021-01-01"
 type: "blog"
 ---
 
-TL:DR
-Enable Public Introspection should be checked in WordPress plugin administration
+**_TL:DR_
+Enable Public Introspection should be checked in WordPress plugin administration**
 
 My blog is running on Gatsby with Wordpress as a headless CMS for my old blog posts. I recently went to update a few things, just fixing typos in blogs, no code changes, and the darn thing would suddenly not compile!
 
@@ -27,4 +27,4 @@ Cannot query field "wpgraphql" on type "Query".
 
 ```
 
-I went back to the egghead.io training I used to help me learn how to build the site and realized the WP GraphQL plugin used in the video was on version 0.7.0 and I apparently updated at some point to version 1.0.5. In the GraphQL settings on the left side of the Wordpress administration page, down at the bottom there is a field called 'Enable Public Introspection' which was not clicked. It basically says by default, queries need to be authenticated unless this box is checked. So I checked it, meaning you don't need authentication to hit the wordpress API anymore. Well, it worked. Presumably, you can send some auth info in your query if you need to keep it private but for me just posting blogs I'm not worried about it.
+I figured this meant that Gatsby was not getting any response from my Wordpress site. I went back to the egghead.io training I used to help me learn how to build the site and realized the WPGraphQL plugin used in the video was on version 0.7.0 and I apparently updated at some point to version 1.0.5. In the GraphQL settings on the left side of the Wordpress administration page, down at the bottom there is a field called 'Enable Public Introspection' which was not clicked. It basically says by default, queries need to be authenticated unless this box is checked. So I checked it, meaning you don't need authentication to hit the wordpress API anymore. Well, it worked. Presumably, you can send some auth info in your query if you need to keep it private but for me just posting blogs I'm not worried about it.
