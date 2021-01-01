@@ -1,6 +1,6 @@
 ---
 title: "First post on my Gatsby site!"
-date: "2017-08-19"
+date: "2020-08-19"
 type: "blog"
 ---
 
