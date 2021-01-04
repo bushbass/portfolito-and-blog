@@ -1,3 +1,4 @@
 # Redirects from what the browser requests to what we serve
 
-/resume https://docs.google.com/document/d/1OR_FV2JG7cnFN5UvEg6kjDb-0JTfI1QAdKwFYxQqjkU/edit
+/resume            https://docs.google.com/document/d/1OR_FV2JG7cnFN5UvEg6kjDb-0JTfI1QAdKwFYxQqjkU/edit
+/youtube           https://www.youtube.com/channel/UCqdNQHOLz3PmB4cDvQkdQ1w

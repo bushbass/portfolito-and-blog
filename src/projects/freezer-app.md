@@ -9,4 +9,4 @@ demo: "https://freezer-organizer.herokuapp.com/"
 hosting: "Heroku"
 ---
 
-Full Stack Node/Express CRUD App using EJS for templating. A REST API allows the user to catalog and modify contents of their freezer. Data is persisted in a MongoDB.
+Full Stack Node/Express CRUD App using EJS for templating. A REST API allows the user to catalog and modify the contents of their freezer. Data is persisted in a MongoDB.
