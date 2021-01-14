@@ -59,7 +59,7 @@ export default function Home() {
           </p>
         </div>
         <div className="social-image-container">
-          <a href="http://AlexNielsen.com/resume">
+          <a href="http://AlexNielsen.net/resume">
             <img
               className="social-image"
               src={`../../social/gmail.png`}
