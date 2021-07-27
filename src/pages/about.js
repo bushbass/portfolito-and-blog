@@ -60,7 +60,7 @@ export default function About() {
         </p>
         <p>
           I’m currently living almost in the country, in northwest New Jersey,
-          the Garden State. Wife, two kids, a two dogs and a cat. I love my
+          the Garden State. Wife, two kids, two dogs and a cat. I love my
           vegetable garden (and attempting to keep the deer out of it) and my
           wife and I are tyring our best to maintain a healthy lifestyle. We try
           to keep in shape so our yearly Spartan Race is not that tough on us
