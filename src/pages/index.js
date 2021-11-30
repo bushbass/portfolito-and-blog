@@ -50,7 +50,7 @@ export default function Home() {
 
         <div>
           <p>
-            I'm a freelance web developer but Im open to making a move back into
+            I'm a freelance web developer looking to make a move back into
             full-time. Ideally I'd like to be working in music/entertainment or
             education (I spent a few years teaching music), but I would be very
             happy working anywhere that has a supportive team and that will
