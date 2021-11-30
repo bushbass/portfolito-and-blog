@@ -50,12 +50,12 @@ export default function Home() {
 
         <div>
           <p>
-            I'm a freelance developer that has been at home taking care of the
-            kids the past few years, but now I'm ready to make a move back into
-            full-time. Ideally I'd like to be working in music/entertainment or
-            education (I spent a few years teaching music), but I would be very
-            happy working anywhere that has a supportive team and that will
-            allow me to continue learning and growing my skills.
+            I've been at home taking care of the kids the past few years but now
+            I'm ready to make a move back into full-time. Ideally I'd like to be
+            working in music/entertainment or education (I spent a few years
+            teaching music), but I would be very happy working anywhere that has
+            a supportive team and that will allow me to continue learning and
+            growing my skills.
           </p>
         </div>
         <div className="social-image-container">
